@@ -94,6 +94,17 @@ html {
   .scrollable-projects::-webkit-scrollbar-track {
     background: transparent;
   }
+  @media (max-width: 768px) { /* Adjust height for small screens */
+    .responsive-row {
+      min-height: 100vh;
+    }
+  }
+
+  @media (min-width: 769px) { /* Maintain 50vh for larger screens */
+    .responsive-row {
+      min-height: 50vh;
+    }
+  }
     </style>
   </head>
 
@@ -204,19 +215,19 @@ html {
               </div>
               <div class="about-social text-center">
                 <ul>
-                  <li>
+                  <li style="margin-bottom: 30px;">
                     <a href="https://www.linkedin.com/in/mr-rohandas/" target="_blank"><i class="ri-linkedin-fill"></i></a>
                   </li>
-                  <li>
+                  <li style="margin-bottom: 30px;">
                     <a href="https://github.com/ROHANDAS2003" target="_blank"><i class="ri-github-line"></i></a>
                   </li>
-                  <li>
+                  <li style="margin-bottom: 30px;">
                     <a href="https://rohan-das.medium.com/" target="_blank"><i class="ri-medium-line"></i></a>
                   </li>
-                  <li>
+                  <li style="margin-bottom: 30px;">
                     <a href="https://www.instagram.com/mr.rohan_das_/" target="_blank"><i class="ri-instagram-fill"></i></a>
                   </li>
-                  <li>
+                  <li style="margin-bottom: 30px;">
                     <a href="https://leetcode.com/u/RohanDas/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode" class="leetcode-icon"></a>
                   </li>
                 </ul>
@@ -254,6 +265,21 @@ html {
       </div>
     </section>
     <!-- / END ABOUT DESIGN AREA -->
+
+    <section style="margin: 4rem;">
+      <div class="section-title text-center wow fadeInUp delay-0-2s">
+        <p>Coding Footprint</p>
+        <h2>Snapshot of My Coding Discipline</h2>
+      </div>
+      <div class="row responsive-row">
+        <div class="col-md-6 col-12 mb-3 mb-md-0">
+          <iframe src="https://lifeofdiscipline.com/notion/habit/cm7uu241g0001l40cixj7cu47?darkTheme=0" frameborder="0" style="width: 100%; height: 100%;"></iframe>
+        </div>
+        <div class="col-md-6 col-12">
+          <iframe src="https://lifeofdiscipline.com/notion/habit/cm7utxazs0000l40clx887nj4?darkTheme=0" frameborder="0" style="width: 100%; height: 100%;"></iframe>
+        </div>
+      </div>
+    </section>
 
     <!-- START RESUME EXPERIENCE DESIGN AREA -->
     <section id="resume" class="resume-area">
