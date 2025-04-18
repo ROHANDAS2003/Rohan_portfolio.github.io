@@ -13,7 +13,7 @@
       content="rohan das, portfolio, rohan das portfolio, rohandas, rohandas2003, mr rohan das, mr-rohan das, rohan, das, rohan das jaipur rajasthan, rohan das jaipur"
     />
     <meta name="author" content="Rohan Das" />
-    <title>Data cleaning & EDA Project - Rohan Das</title>
+    <title>Salary Prediction | Linear Regression - Rohan Das</title>
     <link rel="icon" type="image/png" href="assets/images/icon.png">
     <link
       href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap"
@@ -144,19 +144,21 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6">
-              <h1>Data cleaning & EDA on Students' dataset</h1>
-              <a href="https://github.com/ROHANDAS2003/ML_Project/blob/main/Data%20Cleaning%20%26%20EDA%20Project/Data%20Cleaning%20%26%20EDA%20Project.ipynb" target="_blank" style="color: blue;">Link to Github repo</a>
+              <h1>Salary Prediction Using Liner Regression</h1>
+              <a href="https://github.com/ROHANDAS2003/ML_Project/blob/main/Linear%20Regression/Salary-prediction-linear-regression.ipynb" target="_blank" style="color: blue;">Link to Github repo</a>
               <br><br>
-              <p>In this project, we are working with the Students Grading Dataset from Kaggle. Our primary focus is on <span style="font-weight: bold; color: #000;">data cleaning and exploratory data analysis (EDA)</span>  rather than prediction. The goal is to <span style="font-weight: bold; color: #000;">understand the structure of the dataset, handle missing values, detect outliers, and uncover key patterns in student performance.</span> </p>
-              <p>By analyzing various factors such as attendance, participation, previous scores, and demographics, we aim to gain insights into how these attributes influence student grades. Instead of building a predictive model, this project will serve as a foundation for future machine learning applications by ensuring the dataset is clean and well-explored.</p>
+              <p>This beginner-level machine learning project aims to predict an employee’s <span style="font-weight: bold; color: #000;">salary</span> based on their <span style="font-weight: bold; color: #000;">years of experience</span> using <span style="font-weight: bold; color: #000;">Simple Linear Regression</span>. The goal is to build an interpretable model, visualize the relationship between experience and salary, and make predictions for new data points.</p>
+              <h2>Context</h2>
+              <p>Imagine you are working with an HR analytics team at a hiring consultancy firm. The firm has collected historical data of employees including their years of experience and the corresponding salaries. The management wants to use this data to predict the expected salary for a new candidate based on their work experience. This would help in making fair salary offers and in budgeting for hiring plans.</p>
             </div>
             <div class="col-md-6">
-              <img src="./assets/images/projects/ml/DataCleaning_EDA.jpg" alt="Data Cleaning image" style="border-radius: 25px;">
+              <img src="./assets/images/projects/ml/Salary_Prediction_Linear_Regression.png" alt="Data Cleaning image" style="border-radius: 25px;">
               <br><br>
               <h2>Why is this important?</h2>
               <ul>
-                <li>- Allows teachers and schools to understand key trends affecting student performance.</li>
-                <li>- Provides students with insights into factors impacting their grades through visualization and analysis.</li>
+                <li>- Helps HR teams make data-driven salary decisions based on historical trends.</li>
+                <li>- Assists candidates and hiring managers in setting realistic salary expectations.</li>
+                <li>- Builds foundational understanding of regression analysis and model interpretability.</li>
               </ul>
             </div>
           </div>
@@ -168,28 +170,30 @@
               <h2>Packages Used</h2>
               <ul>
                 <li>- Numpy</li>
-                <li>- Scipy</li>
                 <li>- Pandas</li>
                 <li>- Matplotlib</li>
-                <li>- Seaborn</li>
-                <li>- Plotly</li>
-                <li>- Statsmodels</li>
+                <li>- SciKitlearn</li>
               </ul>
             </div>
             <div class="col-md-6">
               <h2>Steps Taken</h2>
               <ul>
                 <li>- Loading & Exploring Dataset</li>
-                <li>- Handling Gender incosistency</li>
-                <li>- Dropping Unnecessary columns</li>
-                <li>- Handling missing Values</li>
-                <li>- Improving Grade System</li>
-                <li>- Checking for Outliers</li>
-                <li>- Exploring Relationships Between Features and Performance</li>
+                <li>- visualizing the Data</li>
+                <li>- Split Data into Train & Test</li>
+                <li>- Train Linear Regression</li>
+                <li>- Predicting on Test Data</li>
+                <li>- Visulaizing Regression Line on Salary vs Experience</li>
+                <li>- Evaluate the Model</li>
               </ul>
             </div>
           </div>
         </div>
+        <br>
+        <h2>Conclusion</h2>
+        <p>In this project, we worked with a simulated dataset resembling historical employee records, where the goal was to predict salaries based on years of experience. Imagine this scenario within an HR analytics team at a hiring consultancy firm — the firm needs a simple and effective tool to estimate salary expectations for new candidates using existing employee data. <br><br>
+            We built a linear regression model that learned the relationship between experience (in months) and salary (in thousands). After training and evaluating the model on 1,000 records, we achieved an <span style="font-weight: bold; color: #000;">R² score of 0.6264</span>, indicating the model could explain over <span style="font-weight: bold; color: #000;">62% of the variation</span> in salary using just one feature. With an <span style="font-weight: bold; color: #000;">average prediction error of about 4,000</span>, the model provides a solid baseline for salary estimation. <br><br>
+            This project demonstrates how even a simple regression model can be used by HR teams to support fair and data-driven salary offers, improve budgeting accuracy, and streamline hiring processes.</p>
         <br><br>
         <div class="scrollable-projects">
           <div class="row">
@@ -205,9 +209,9 @@
             <div class="col-lg-4 col-md-6 item py web">
               <div class="project-item style-two wow">
                 <div class="project-image">
-                  <img src="assets/images/projects/ml/DataCleaning_EDA1.png" alt="Project"/>
+                  <img src="assets/images/projects/ml/Salary_Prediction_1.png" alt="Project"/>
                   <a
-                    href="assets/images/projects/ml/DataCleaning_EDA1.png"
+                    href="assets/images/projects/ml/Salary_Prediction_1.png"
                     class="details-btn" target="_blank"
                     ><i class="ri-arrow-right-up-line"></i
                   ></a>
@@ -219,9 +223,9 @@
             <div class="col-lg-4 col-md-6 item web">
               <div class="project-item style-two wow">
                 <div class="project-image">
-                  <img src="assets/images/projects/ml/DataCleaning_EDA3.png" alt="Project"/>
+                  <img src="assets/images/projects/ml/Salary_Prediction_2.png" alt="Project"/>
                   <a
-                    href="assets/images/projects/ml/DataCleaning_EDA3.png"
+                    href="assets/images/projects/ml/Salary_Prediction_2.png"
                     class="details-btn" target="_blank"
                     ><i class="ri-arrow-right-up-line"></i
                   ></a>
@@ -233,9 +237,9 @@
             <div class="col-lg-4 col-md-6 item py">
               <div class="project-item style-two wow">
                 <div class="project-image">
-                  <img src="assets/images/projects/ml/DataCleaning_EDA2.png" alt="Project" />
+                  <img src="assets/images/projects/ml/Salary_Prediction_3.png" alt="Project" />
                   <a
-                    href="assets/images/projects/ml/DataCleaning_EDA2.png"
+                    href="assets/images/projects/ml/Salary_Prediction_3.png"
                     class="details-btn" target="_blank"
                     ><i class="ri-arrow-right-up-line"></i
                   ></a>
@@ -247,51 +251,9 @@
             <div class="col-lg-4 col-md-6 item web">
               <div class="project-item style-two wow">
                 <div class="project-image">
-                  <img src="assets/images/projects/ml/DataCleaning_EDA4.png" alt="Project" />
+                  <img src="assets/images/projects/ml/Salary_Prediction_4.png" alt="Project" />
                   <a
-                    href="assets/images/projects/ml/DataCleaning_EDA4.png"
-                    class="details-btn" target="_blank"
-                    ><i class="ri-arrow-right-up-line"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <!-- / END SINGLE PORTFOLIO DESIGN AREA -->
-            <!-- START SINGLE PORTFOLIO DESIGN AREA -->
-            <div class="col-lg-4 col-md-6 item des">
-              <div class="project-item style-two wow">
-                <div class="project-image">
-                  <img src="assets/images/projects/ml/DataCleaning_EDA5.png" alt="Project" />
-                  <a
-                    href="assets/images/projects/ml/DataCleaning_EDA5.png"
-                    class="details-btn" target="_blank"
-                    ><i class="ri-arrow-right-up-line"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <!-- / END SINGLE PORTFOLIO DESIGN AREA -->
-            <!-- START SINGLE PORTFOLIO DESIGN AREA -->
-            <div class="col-lg-4 col-md-6 item py">
-              <div class="project-item style-two wow">
-                <div class="project-image">
-                  <img src="assets/images/projects/ml/DataCleaning_EDA6.png" alt="Project" />
-                  <a
-                    href="assets/images/projects/ml/DataCleaning_EDA6.png"
-                    class="details-btn" target="_blank"
-                    ><i class="ri-arrow-right-up-line"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <!-- / END SINGLE PORTFOLIO DESIGN AREA -->
-            <!-- START SINGLE PORTFOLIO DESIGN AREA -->
-            <div class="col-lg-4 col-md-6 item des">
-              <div class="project-item style-two wow">
-                <div class="project-image">
-                  <img src="assets/images/projects/ml/DataCleaning_EDA7.png" alt="Project" />
-                  <a
-                    href="assets/images/projects/ml/DataCleaning_EDA7.png"
+                    href="assets/images/projects/ml/Salary_Prediction_4.png"
                     class="details-btn" target="_blank"
                     ><i class="ri-arrow-right-up-line"></i
                   ></a>
