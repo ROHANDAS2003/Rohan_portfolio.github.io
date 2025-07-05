@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Gradient Descent from Scratch - Rohan Das"
+    />
+    <meta
+      name="keywords"
+      content="rohan das, portfolio, rohan das portfolio, rohandas, rohandas2003, mr rohan das, mr-rohan das, rohan, das, rohan das jaipur rajasthan, rohan das jaipur, gradient descent, gradient descent from scratch, gradient descent rohan das"
+    />
+    <meta name="author" content="Rohan Das" />
+    <title>Gradient Descent from Scratch - Rohan Das</title>
+    <link rel="icon" type="image/png" href="assets/images/icon.png">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- FONT AWESOME CSS -->
+    <link rel="stylesheet" href="assets/fonts/remixicon.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- MAGNIFIC CSS -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <!-- NICE SELECT CSS -->
+    <link rel="stylesheet" href="assets/css/nice-select.min.css" />
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <!-- SLICK CSS -->
+    <link rel="stylesheet" href="assets/css/slick.min.css" />
+    <!-- SPACING CSS -->
+    <link rel="stylesheet" href="assets/css/spacing.css" />
+    <!-- MAIN STYLE CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- RESPONSIVE CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <!-- SwiperJS & Initialization Script -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <style>
+        /* Enable smooth scrolling for the whole page */
+        html {
+          scroll-behavior: smooth;
+        }
+        
+        .b-title {
+          color: #000;
+        }
+
+        .project-filter{
+            z-index: -2;
+        }
+
+        .mar{
+            height: 50px;
+        }
+
+        .project-image img{
+            border-radius: 15px;
+        }
+
+        .project-item.style-two .project-image:before{
+            border-radius: 15px;
+        }
+            </style>
+</head>
+<body>
+    <!-- START PRELOADER AREA-->
+    <div id="preloader-area">
+        <div class="loader">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+        </div>
+      </div>
+      <!-- END PRELOADER AREA -->
+  
+      <!-- START MENU DESIGN AREA -->
+      <header class="main-header">
+        <div class="header-upper">
+          <div class="container">
+            <div class="header-inner d-flex align-items-center">
+              <!-- START LOGO DESIGN AREA -->
+              <div class="logo-outer">
+                <div class="logo">
+                  <a href="index.html"><img src="assets/images/logo.png" alt="Logo" title="Logo" style="width: 200px;"/></a>
+                </div>
+              </div>
+              <!-- / END LOGO DESIGN AREA -->
+              <!-- START NAV DESIGN AREA -->
+              <div class="nav-outer">
+                <!-- Main Menu -->
+                <nav class="main-menu navbar-expand-lg">
+                  <div class="navbar-header">
+                    <div class="mobile-logo">
+                      <a href="index.html">
+                        <img
+                          src="assets/images/logo.png"
+                          alt="Logo"
+                          title="Logo"
+                        />
+                      </a>
+                    </div>
+                    <!-- Toggle Button -->
+                    <button
+                      type="button"
+                      class="navbar-toggle"
+                      data-bs-toggle="collapse"
+                      data-bs-target=".navbar-collapse"
+                    >
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                  </div>
+                  <div class="navbar-collapse collapse">
+                    <ul class="navigation onepage clearfix">
+                      <li><a class="nav-link-click" href="https://www.rohandas2003.com/">Home</a></li>
+                      <li><a class="nav-link-click" href="https://www.rohandas2003.com/projects.html">Projects</a></li>
+                      <li><a class="nav-link-click" href="https://www.rohandas2003.com/blogs.html">Blogs</a></li>                    
+                      <li><a class="nav-link-click" href="https://www.rohandas2003.com/#contact">Contact</a></li>
+                    </ul>
+                  </div>
+                </nav>
+                <!-- / END NAV DESIGN AREA -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- / END MENU DESIGN AREA -->
+
+    <!-- HEADER -->
+    
+    <!-- START PORTFOLIO DESIGN AREA -->
+<section id="portfolio" class="projects-area">
+  <div class="container">
+    <div class="mar"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1>How a Machine Learns: Gradient Descent From Scratch</h1>
+          <a href="https://github.com/ROHANDAS2003/ML_Project/blob/main/Gradient_Descent_from_Scratch.py" target="_blank" style="color: blue;">Link to Github Repo</a>
+          <br><br>
+          <p>
+            Ever wondered how machines *actually learn*? In this blog, we break down one of the core engines behind modern machine learning — 
+            <span style="font-weight: bold; color: #000;">Gradient Descent</span>. No libraries, no shortcuts. Just pure math, logic, and Python.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img src="./assets/images/blog/Gradient Descent from Scratch | Rohan Das.jpeg" alt="Gradient Descent Visual" style="border-radius: 25px;">
+          <br><br>
+          <h2>Why This Matters</h2>
+          <ul>
+            <li>- It demystifies how ML models optimize themselves.</li>
+            <li>- Helps you understand what's behind algorithms like Linear Regression, Logistic Regression, and Neural Networks.</li>
+            <li>- Reinforces your grasp of core math concepts like derivatives, slope, and minimization.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <br>
+    <h2>The Story</h2>
+          <p>
+            Imagine a blindfolded hiker on a mountain trying to reach the lowest point in the valley. He can’t see the whole terrain, but by feeling the steepness under his feet, he decides which direction to move. This is exactly how a machine *"learns"* — by descending the slope of errors, step by step, adjusting parameters to minimize loss.
+          </p>
+          <p>
+            In our case, the <strong>valley</strong> is the <strong>Loss Function</strong>, and the <strong>slope</strong> is its gradient. Every step we take is an <strong>epoch</strong>, and how large our steps are is defined by the <strong>learning rate</strong>.
+          </p>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>What We’ll Cover</h2>
+          <ul>
+            <li>- What is Gradient Descent?</li>
+            <li>- How it works with Mean Squared Error (MSE)</li>
+            <li>- Implementing everything from scratch</li>
+            <li>- Key concepts: Loss, learning rate, epochs</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h2>Concepts You’ll Learn</h2>
+          <ul>
+            <li>- Gradient = Derivative = Slope</li>
+            <li>- Cost/Loss Function: MSE</li>
+            <li>- Partial Derivatives: ∂L/∂w and ∂L/∂b</li>
+            <li>- Convergence via Iteration</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <div class="row">
+      <div class="col-md-12">
+        <h2>What Are We Teaching the Machine?</h2>
+        <p>Say we want to predict how much a customer will spend based on how much time they spend on our site.</p>
+        <p>The machine tries to learn this relationship:</p>
+        <p style="background: #f5f5f5; padding: 10px; border-left: 4px solid #888;"><code>spending = weight_1 × time + weight_0</code></p>
+        <p>The <strong>weights</strong> (also called <code>parameters</code>) are like knobs the machine adjusts to improve its guesses.</p>
+        <p>At first, these knobs are wrong. So the machine guesses, sees how wrong it was, and then adjusts the weights — again and again.</p>
+      </div>
+    </div>
+    <br><br>
+    <div class="row">
+      <div class="col-md-6">
+        <h2>MSE: Measuring the Wrongness</h2>
+        <p>To know how wrong it is, the machine uses a formula: <strong>Mean Squared Error (MSE)</strong>.</p>
+        <p><code>MSE = average of (prediction − actual)<sup>2</sup></code></p>
+        <ul>
+          <li>If all predictions are perfect, MSE = 0.</li>
+          <li>Bigger mistakes are punished more (they’re squared).</li>
+        </ul>
+        <p>This MSE becomes the “height” on the mountain. Lower is better.</p>
+      </div>
+
+      <div class="col-md-6">
+        <h2>Learning Rate: Step Size</h2>
+        <p>The <strong>learning rate</strong> decides how big each step is.</p>
+        <ul>
+          <li>Too big? You might overshoot and miss the minimum.</li>
+          <li>Too small? You’ll take forever to get there.</li>
+        </ul>
+        <p>A good starting value is <code>0.1</code>. This tells the machine to step cautiously but effectively.</p>
+      </div>
+    </div>
+    <br><br>
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Epochs: Repetition Matters</h2>
+        <p>One <strong>epoch</strong> = the machine has seen all the data once.</p>
+        <p>Usually, we do this 50–100 times so it can gradually learn better.</p>
+      </div>
+
+      <div class="col-md-6">
+        <h2>Mini-Batches: Study Groups</h2>
+        <p>Feeding all data at once is slow. One-by-one is chaotic.</p>
+        <p><strong>Mini-batches</strong> (e.g. 20 samples at a time) offer balance.</p>
+        <p>Like studying in small groups — fast and effective.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Why Shuffle?</h2>
+        <p>What if we feed only 2020 data first, then 2021?</p>
+        <p>The machine might learn bad or outdated patterns.</p>
+        <p><strong>Shuffling</strong> the data before every epoch avoids this, helping the machine learn fairer rules.</p>
+      </div>
+    </div>
+    <br><br>
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Full Code: Gradient Descent From Scratch</h2>
+        <p>Here’s a full Python implementation, complete with comments. No frameworks, just NumPy:</p>
+    <pre><code style="background-color: #272822; color: #f8f8f2; padding: 15px; border-radius: 10px; display: block;">
+import numpy as np
+
+# Step 1: Generate synthetic data
+np.random.seed(0)
+X = 2 * np.random.rand(100, 1)             # 100 data points, one feature (time)
+y = 4 + 3 * X + np.random.randn(100, 1)    # True relation: y = 4 + 3x + noise
+
+# Step 2: Add a bias (intercept) term to input
+X_b = np.c_[np.ones((X.shape[0], 1)), X]   # Shape: (100, 2)
+
+# Step 3: Initialize weights randomly
+theta = np.random.randn(2, 1)              # Two weights: [intercept, slope]
+
+# Step 4: Set hyperparameters
+learning_rate = 0.1
+n_epochs = 50
+batch_size = 20
+m = X_b.shape[0]                           # Total number of samples
+
+# Step 5: Define the loss function (Mean Squared Error)
+def compute_loss(X, y, theta):
+    predictions = X.dot(theta)
+    errors = predictions - y
+    return np.mean(errors ** 2)
+
+# Step 6: Train using mini-batch gradient descent
+for epoch in range(n_epochs):
+    # Shuffle data at the start of each epoch
+    indices = np.random.permutation(m)
+    X_b_shuffled = X_b[indices]
+    y_shuffled = y[indices]
+    
+    for i in range(0, m, batch_size):
+        # Create mini-batch
+        X_batch = X_b_shuffled[i:i+batch_size]
+        y_batch = y_shuffled[i:i+batch_size]
+        
+        # Predict and compute gradients
+        predictions = X_batch.dot(theta)
+        errors = predictions - y_batch
+        gradients = (2 / batch_size) * X_batch.T.dot(errors)
+        
+        # Update weights
+        theta = theta - learning_rate * gradients
+
+    # Print loss after each epoch
+    loss = compute_loss(X_b, y, theta)
+    print(f"Epoch {epoch+1}, Loss: {loss:.4f}")
+
+# Final weights after training
+print("\nFinal learned weights (theta):")
+print(theta)
+    </code></pre>
+    <br>
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Recap for Everyone</h2>
+        <table class="table table-bordered">
+          <thead class="thead-dark">
+            <tr>
+              <th>Concept</th>
+              <th>What it Means</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Weights</strong></td>
+              <td>The values the machine adjusts to get better at prediction</td>
+            </tr>
+            <tr>
+              <td><strong>Loss (MSE)</strong></td>
+              <td>A number showing how wrong the machine's predictions are</td>
+            </tr>
+            <tr>
+              <td><strong>Gradient Descent</strong></td>
+              <td>The process of stepping downhill to reduce error</td>
+            </tr>
+            <tr>
+              <td><strong>Learning Rate</strong></td>
+              <td>The size of each step the machine takes during learning</td>
+            </tr>
+            <tr>
+              <td><strong>Epoch</strong></td>
+              <td>One complete pass through all training data</td>
+            </tr>
+            <tr>
+              <td><strong>Mini-Batch</strong></td>
+              <td>Small groups of data used to speed up training</td>
+            </tr>
+            <tr>
+              <td><strong>Shuffle</strong></td>
+              <td>Mixes data each round to prevent pattern bias</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <br><br>
+    <div class="row project-masonry-active">
+      <div class="col-md-12">
+        <h2>The Bigger Picture</h2>
+        <p>Whether you're building a recommendation engine, pricing model, or fraud detector — it starts with Gradient Descent.</p>
+        <p>You’ve just followed how machines learn: step by step, down the foggy mountain of error, into clarity and accuracy.</p>
+        <p>So next time someone says, "Machines are learning," you'll know they're just climbing down a slope — step by calculated step.</p>
+      </div>
+    </div>
+    <br><br>
+    <div class="scrollable-projects">
+      <div class="row">
+        <div class="col-xl-12 col-lg-12">
+          <div class="section-title text-center wow fadeInUp delay-0-2s">
+            <h2>Visualizing Gradient Descent</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row project-masonry-active">
+        <!-- START SINGLE IMAGE -->
+        <div class="col-lg-4 col-md-6 item py web">
+          <div class="project-item style-two wow">
+            <div class="project-image">
+              <img src="assets/images/blog/Gradient Descent loss curve | Rohan Das.webp" alt="Loss curve"/>
+              <a href="assets/images/blog/Gradient Descent loss curve | Rohan Das.webp" class="details-btn" target="_blank"><i class="ri-arrow-right-up-line"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- END SINGLE IMAGE -->
+        <div class="col-lg-4 col-md-6 item web">
+          <div class="project-item style-two wow">
+            <div class="project-image">
+              <img src="assets/images/blog/MSE | Rohan Das.webp" alt="MSE loss"/>
+              <a href="assets/images/blog/MSE | Rohan Das.webp" class="details-btn" target="_blank"><i class="ri-arrow-right-up-line"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- // END PORTFOLIO DESIGN AREA -->
+
+    <!-- START FOOTER DESIGN AREA -->
+    <footer class="main-footer">
+        <div class="col-lg-12">
+          <div class="about-image-part fadeInUp delay-0-3s" style="margin: 0; padding: 20px;">
+            <ul class="onepage" style="display: flex; justify-content:space-around;">
+              <li><a class="nav-link-click" href="https://www.rohandas2003.com/">Home</a></li>
+              <li><a class="nav-link-click" href="https://www.rohandas2003.com/projects.html">Projects</a></li>
+              <li><a class="nav-link-click" href="https://www.rohandas2003.com/blogs.html">Blogs</a></li>                    
+              <li><a class="nav-link-click" href="https://www.rohandas2003.com/#contact">Contact</a></li>
+            </ul>
+            <div class="about-social">
+              <ul>
+                <li style="margin-bottom: 30px;">
+                  <a href="https://www.linkedin.com/in/mr-rohandas/" target="_blank"><i class="ri-linkedin-fill"></i></a>
+                </li>
+                <li style="margin-bottom: 30px;">
+                  <a href="https://github.com/ROHANDAS2003" target="_blank"><i class="ri-github-line"></i></a>
+                </li>
+              </ul>
+              <div class="footer-bottom pt-10">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-12 text-center">
+                      <div class="copyright-text">
+                        <p>
+                          Copyright © 2025 - <a href="https://www.rohandas2003.com/">Rohan Das</a> | All Rights Reserved.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- / END FOOTER DESIGN AREA -->
+  
+      <!-- START SCROOL UP DESIGN AREA -->
+      <div class="progress-wrap cursor-pointer">
+        <i class="ri-arrow-up-double-line"></i>
+        <svg
+          class="progress-circle svg-content"
+          width="100%"
+          height="100%"
+          viewBox="-1 -1 102 102"
+        >
+          <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+      </div>
+      <!-- / END SCROOL UP DESIGN AREA -->
+
+   <!-- JQUERY JS -->
+   <script src="assets/js/jquery-3.6.0.min.js"></script>
+   <!-- BOOTSTRAP JS-->
+   <script src="assets/js/bootstrap.min.js"></script>
+   <!-- APPEAR JS -->
+   <script src="assets/js/appear.min.js"></script>
+   <!-- SLICK JS-->
+   <script src="assets/js/slick.min.js"></script>
+   <!-- NICE SELECT JS-->
+   <script src="assets/js/jquery.nice-select.min.js"></script>
+   <!-- IMAGE LOADER JS-->
+   <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+   <!-- ISOTOPE JS-->
+   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+   <!--  WOW ANIMATION JS-->
+   <script src="assets/js/wow.min.js"></script>
+   <!-- SCRIPT JS-->
+   <script src="assets/js/script.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html>
