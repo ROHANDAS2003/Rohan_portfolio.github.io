@@ -111,9 +111,15 @@
         <div class="section-title">All Blogs</div>
         <div class="muted">Short reads, tutorials and deep dives</div>
       </div>
+      <!-- <div class="tabs container-narrow">
+        <button class="tab-btn active" data-filter="all">All</button>
+        <button class="tab-btn" data-filter="writing">Writing</button>
+        <button class="tab-btn" data-filter="ai">AI</button>
+        <button class="tab-btn" data-filter="phy">Phylosophy</button>
+      </div> -->
 
       <div class="blog-grid container-narrow">
-        <article class="post-card">
+        <article class="post-card show" data-category="ai">
           <img class="post-image" src="https://www.bakerlab.org/wp-content/uploads/2024/08/Baker-Lab-allosteric-proteins.webp" alt="Transformers">
           <div class="post-body">
             <div class="kicker">Info</div>
@@ -124,7 +130,7 @@
           </div>
         </article>
 
-        <article class="post-card">
+        <article class="post-card show" data-category="ai">
           <img class="post-image" src="assets/images/blog/Predictive_model_Readmission.png" alt="Production ML">
           <div class="post-body">
             <div class="kicker">POC</div>
@@ -135,7 +141,7 @@
           </div>
         </article>
 
-        <article class="post-card">
+        <article class="post-card show" data-category="ai">
           <img class="post-image" src="assets/images/blog/Personal_EMR.png" alt="On-Device">
           <div class="post-body">
             <div class="kicker">Ideation</div>
@@ -148,7 +154,7 @@
       </div>
 
       <div class="blog-grid container-narrow mt-3">
-        <article class="post-card">
+        <article class="post-card show" data-category="ai">
           <img class="post-image" src="https://aiforhealthtech.com/wp-content/uploads/2025/02/snake-antitoxin-art-v4-grey.jpg" alt="Transformers">
           <div class="post-body">
             <div class="kicker">Info</div>
@@ -159,7 +165,7 @@
           </div>
         </article>
 
-        <article class="post-card">
+        <article class="post-card show" data-category="ai">
           <img class="post-image" src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*39t77-ZsUY44KE2pDAXkLQ.png" alt="Production ML">
           <div class="post-body">
             <div class="kicker">POC</div>
@@ -170,7 +176,7 @@
           </div>
         </article>
 
-        <article class="post-card">
+        <article class="post-card show" data-category="ai">
           <img class="post-image" src="https://terno.ai/wp-content/uploads/2025/05/Elegant-Cinematic-Wedding-Thumbnail-HD-169.png" alt="On-Device">
           <div class="post-body">
             <div class="kicker">How-to</div>
@@ -181,6 +187,7 @@
           </div>
         </article>
       </div>
+      </section>
     
     <!-- FOOTER -->
     <footer>
@@ -295,6 +302,30 @@
         applyTheme(currentIsDark ? 'light-theme' : 'dark-theme');
       });
     });
+
+const tabBtns = document.querySelectorAll('.tab-btn');
+const cards = document.querySelectorAll('.post-card');
+
+
+tabBtns.forEach(btn => {
+btn.addEventListener('click', () => {
+const filter = btn.dataset.filter;
+
+
+tabBtns.forEach(b => b.classList.remove('active'));
+btn.classList.add('active');
+
+
+cards.forEach(card => {
+const cats = card.dataset.category.split(' ');
+if (filter === 'all' || cats.includes(filter)) {
+card.classList.add('show');
+} else {
+card.classList.remove('show');
+}
+});
+});
+});
   </script>
 </body>
 <!-- MOBILE / TABLET OFFCANVAS (place this near the end of the document, direct child of <body>) -->
