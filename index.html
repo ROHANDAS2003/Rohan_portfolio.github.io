@@ -60,8 +60,11 @@
   <main>
     <section class="hero">
       <div class="hero-card text-center">
-        <!-- avatar (replace src) -->
-        <img class="avatar" src="assets/images/about/profile.png" alt="Rohan Das">
+        <img class="avatar" 
+            src="assets/images/about/profile.png" 
+            data-hover="assets/images/about/profile.jpeg" 
+            data-normal="assets/images/about/profile.png"
+            alt="Rohan Das">
       </div>
 
       <div class="hero-content">
@@ -166,7 +169,7 @@
                     <h6 style="margin:0;">Content Writer</h6>
                     <small class="muted">Acolyte technologies • Nov 2023 – Feb 2024</small>
                   </div>
-                  <div class="muted" style="font-size:.75rem">Full-time • Remote</div>
+                  <div class="muted" style="font-size:.75rem">Full-time • On-Site</div>
                 </div>
               </div>
             </div>
@@ -182,7 +185,7 @@
                     <h6 style="margin:0;">PG Certificate Program in Applied DS & AI</h6>
                     <small class="muted">IIT Roorkee • Oct 2024 - May 2025</small>
                   </div>
-                  <div class="muted" style="font-size:.75rem">CGPA: 8.23</div>
+                  <div class="muted" style="font-size:.75rem">CGPA: 9.12</div>
                 </div>
               </div>
 
@@ -378,6 +381,16 @@
 
   <!-- Theme toggle script -->
   <script>
+    const img = document.querySelector('.avatar');
+
+    img.addEventListener('mouseover', () => {
+      img.src = img.dataset.hover;
+    });
+
+    img.addEventListener('mouseout', () => {
+      img.src = img.dataset.normal;
+    });
+
     (function(){
       const body = document.body;
       const toggles = [
